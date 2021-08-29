@@ -104,3 +104,4 @@ function sendMail(){
     console.log('Success',res.status);
   })
 }
+// slider

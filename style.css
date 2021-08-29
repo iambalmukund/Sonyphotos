@@ -27,7 +27,7 @@
     justify-content: space-between;
   }
   .items span{
-    padding: 7px 25px;
+    padding: 0px 20px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;

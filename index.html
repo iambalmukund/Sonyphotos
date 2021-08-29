@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -50,6 +51,9 @@
                                         </li>
                                         <li class="nav-item">
                                             <a activeclass="menu_active" class="nav-link" href="#gallery">Gallery</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a activeclass="menu_active" class="nav-link" href="#testimonial">Testimonial</a>
                                         </li>
                                         <li class="nav-item">
                                             <a activeclass="menu_active" class="nav-link" href="#contact">Contact</a>
@@ -92,8 +96,8 @@
         </div>
     </section>
     <!--  ======================== Brand Area ==============================  -->
-    <h1 class="text-3xl font-medium title-font text-gray-900 text-center about" id="about">Let Me Introduce My Studio.</h1>
-    <section class="text-gray-600 body-font">
+    <h1 class="text-3xl font-medium title-font text-gray-900 text-center about" id="about" data-aos="fade-up">Let Me Introduce My Studio.</h1>
+    <section class="text-gray-600 body-font" data-aos="fade-up">
         <div class="container px-5 py-20 mx-auto flex flex-col">
             <div class="lg:w-4/6 mx-auto">
                 <div class="rounded-lg h-64 overflow-hidden">
@@ -116,7 +120,7 @@
                     <div
                         class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
                         <p class="leading-relaxed text-lg mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repellat sunt saepe nihil, ut esse dicta atque maiores laborum nam velit, minima doloremque. Veritatis, odio dicta laudantium illo nulla est nam unde veniam aliquam dolore facilis nostrum saepe ducimus inventore. Facilis consectetur sit sint dignissimos.</p>
-                        <button class="button"><span>Call Me!</span></button>
+                        <button class="button" data-aos="slide-left"><span>Call Me!</span></button>
                     </div>
                 </div>
             </div>
@@ -158,12 +162,12 @@
         </div>
     </section> -->
 
-    <h2 class="gal" id="gallery">👇🏻<span class="typing"></span></h2>
+    <h2 class="gal" id="gallery" data-aos="zoom-in-down">👇🏻<span class="typing"></span></h2>
     <div class="wrapper">
 
         <!-- filter Items -->
         <nav>
-            <div class="items">
+            <div class="items" data-aos="zoom-in-up">
                 <span class="item active" data-name="all">All</span>
                 <span class="item" data-name="bag">Pre-Wedding</span>
                 <span class="item" data-name="shoe">Wedding</span>
@@ -173,7 +177,7 @@
             </div>
         </nav>
         <!-- filter Images -->
-        <div class="gallery" id="image">
+        <div class="gallery" id="image" data-aos="zoom-in-down">
             <div class="image" data-name="bag"><span><img src="images/bag-1.jpg" alt=""></span></div>
             <div class="image" data-name="headphone"><span><img src="images/headphone-1.jpg" alt=""></span></div>
             <div class="image" data-name="camera"><span><img src="images/camera-1.jpg" alt=""></span></div>
@@ -195,11 +199,10 @@
     <div class="shadow"></div>
     <script src="script.js"></script>
 <!-- video gallery -->
-<h2 class="gal">👇🏻<span class="animate"></span></h2>
-<h1 class="text-center about">VIdeo Gallery.</h1>
+<div><h2 class="gal" id="gallery" data-aos="zoom-in-down">👇🏻 <span id="type"> VIDEO GALLERY</span></h2></div>
 <!-- end of video gallery -->
 <!-- sample video gallery 2 -->
-<div class="video-container">
+<div class="video-container" data-aos="zoom-in-down">
     <video src="image/sample.mp4" class="video" controls="controls" width="350"></video>
     <video src="image/sample.mp4" class="video" controls="controls" width="350"></video>
     <video src="image/sample.mp4" class="video" controls="controls" width="350"></video>
@@ -208,8 +211,8 @@
     <video src="image/sample.mp4" class="video" controls="controls" width="350"></video>
 </div>
 <!-- testimonial -->
-<h1 class="text-center about">Testimonial.</h1>
-<div class="container">
+<h1 class="text-center about" data-aos="zoom-in-down" id="testimonial">Testimonial.</h1>
+<div class="container" data-aos="zoom-in-down">
     <div class="row">
         <div class="col-md-12">
             <div class="carousel slide" data-ride="carousel" id="quote-carousel">
@@ -268,8 +271,8 @@
 </div>
 <!-- end testimonial -->
 <!-- Contact Us Section -->
-<h1 class="text-center about" id="contact">Contact Us.</h1>
-<div class="containner">
+<h1 class="text-center about" id="contact" data-aos="slide-up">Contact Us.</h1>
+<div class="containner" data-aos="zoom-in">
     <div class="form">
       <div class="contact-info">
         <h3 class="title">Let's get in touch</h3>
@@ -382,5 +385,12 @@ emailjs.init("user_UsURgyVbyoh99hp93WacK");
 })();
 </script>
 <script src="typed.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+      offset:200,
+      duration:1000
+  });
+</script>
 </body>
 </html>

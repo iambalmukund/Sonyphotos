@@ -817,6 +817,7 @@ textarea.input {
 }
 /* video styling */
 .video-container{
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;

@@ -80,8 +80,8 @@ var typed = new Typed(".typing", {
   backSpeed: 60,
   loop: true
 });
-var typed = new Typed("#type", {
-  strings: ["IMAGE GALLERY",],
+var typed = new Typed(".typing1", {
+  strings: ["Video Gallery",],
   typeSpeed: 100,
   backSpeed: 60,
   loop: true
